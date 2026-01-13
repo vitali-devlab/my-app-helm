@@ -1,12 +1,8 @@
 image:
   repository: vitalif23/my-app-source
-  tag: "latest"
-  pullPolicy: IfNotPresent
+  tag: "latest" # Эту строку будет обновлять робот
+  pullPolicy: Always
 
 service:
   type: ClusterIP
   port: 80
-
-ingress:
-  enabled: true
-  host: my-argocd-app.test
