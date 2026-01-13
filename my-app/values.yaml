@@ -1,6 +1,6 @@
 image:
   repository: vitalif23/my-app-source
-  tag: "latest" # Эту строку будет обновлять робот
+  tag: "latest"
   pullPolicy: Always
 
 service:
