@@ -15,3 +15,5 @@ resources:
   limits:
     memory: "128Mi" # Не больше 128 мегабайт
     cpu: "200m"     # Не больше 0.2 ядра
+nodeSelector:
+  disktype: ssd
