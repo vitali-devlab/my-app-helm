@@ -6,3 +6,12 @@ image:
 service:
   type: ClusterIP
   port: 80
+# ... (предыдущие настройки image и service)
+
+resources:
+  requests:
+    memory: "64Mi"  # Минимум 64 мегабайта
+    cpu: "100m"     # 0.1 ядра процессора (100 millicores)
+  limits:
+    memory: "128Mi" # Не больше 128 мегабайт
+    cpu: "200m"     # Не больше 0.2 ядра
