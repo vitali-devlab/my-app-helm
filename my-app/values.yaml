@@ -1,6 +1,6 @@
 image:
   repository: vitalif23/my-app-source
-  tag: "latest"
+  tag: "dev-v3"
   pullPolicy: Always
 
 service:
