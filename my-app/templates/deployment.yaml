@@ -22,3 +22,5 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
       nodeSelector:
         {{- toYaml .Values.nodeSelector | nindent 8 }}
+      tolerations:
+        {{- toYaml .Values.tolerations | nindent 8 }}

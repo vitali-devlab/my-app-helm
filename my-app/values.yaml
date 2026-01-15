@@ -17,3 +17,11 @@ resources:
     cpu: "200m"     # Не больше 0.2 ядра
 nodeSelector:
   disktype: ssd
+
+  # ... (nodeSelector и другие настройки)
+
+tolerations:
+  - key: "dedicated"
+    operator: "Equal"
+    value: "special"
+    effect: "NoSchedule"
